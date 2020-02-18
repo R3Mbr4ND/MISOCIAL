@@ -3,10 +3,12 @@
 }
 
 body {
+  font-family: "Maven Pro", sans-serif;
   margin: 0;
 }
 
 main {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,8 +37,98 @@ main {
 }
 
 header {
-  border: 2px solid red;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   position: relative;
   z-index: 2;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu ul {
+ display: flex;
+ justify-content: space-around;
+ list-style: none;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.get-started-btn {
+  font-size: 12px;
+  margin-left: 30px;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.main-text * {
+}
+
+.main-text h1 {
+  font-size: 70px;
+  margin: 0.5rem;
+}
+
+.main-text span {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.main-text span::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.main-text span::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.main-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 8vh;
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
 }
