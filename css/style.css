@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Maven Pro", sans-serif;
   margin: 0;
@@ -131,4 +135,122 @@ header {
   background-color: white;
   border-radius: 50%;
   box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+}
+
+.table {
+  background-color: #f9fafc;
+  padding: 10rem;
+}
+
+.table-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.table-header span {
+  color: #9fa4af;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.table-header span::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.table-header span::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.table-header h2 {
+  color: #4f4f6f;
+  font-size: 6rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.table-header p {
+  font-size: 1.8rem;
+  color: #b6bac2;
+}
+
+.price-tags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 35rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+
+.price-tag:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 80px 10px rgba(204, 204, 223, 0.71);
+}
+
+.price-tag span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 3rem 1rem;
+}
+
+.price-tag h3 {
+  margin: 1rem;
+  font-weight: 500;
+  font-size: 4.5rem;
+  color: #4f4f6f;
+}
+
+.price-tag h3 sup {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.price-tag h3 sub {
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
+
+.price-tag p {
+  width: 300px;
+  font-size: 1.5rem;
+  color: #b7bbc3;
+}
+
+.price-btn {
+  background-color: white;
+  border: #d7dbe8 1px solid;
+  border-radius: 100px;
+  color: #c2c9db;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 4rem;
+  transition: 0.2s;
+}
+
+.price-btn:hover {
+  background-color: #6e45e2;
+  color: white;
 }
