@@ -1,1 +1,2 @@
-# second-site
+# Владислав Клименко
+MISOCIAL project
