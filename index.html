@@ -31,11 +31,11 @@
       </a>
       <div class="menu visible-lg">
         <ul>
-          <li><a href="#" class="menu-link">Home</a></li>
-          <li><a href="#" class="menu-link">Why MISOCIAL</a></li>
-          <li><a href="#" class="menu-link">Features</a></li>
-          <li><a href="#" class="menu-link">Articles</a></li>
-          <li><a href="#" class="menu-link">Pricing</a></li>
+          <li><a href="#" class="menu-link menu-link-hover">Home</a></li>
+          <li><a href="#" class="menu-link menu-link-hover">Why MISOCIAL</a></li>
+          <li><a href="#" class="menu-link menu-link-hover">Features</a></li>
+          <li><a href="#" class="menu-link menu-link-hover">Articles</a></li>
+          <li><a href="#" class="menu-link menu-link-hover">Pricing</a></li>
           <li><a href="#" class="get-started-btn menu-link">Get Started</a></li>
         </ul>
       </div>
@@ -94,7 +94,6 @@
     </div>
   </div>
   <div class="call-to-action">
-    <!-- <div class="call-to-action-overlay"></div> -->
     <div class="wrap">
       <span>social marketing & analitics</span>
       <h4>Take control of your data</h4>
@@ -133,19 +132,19 @@
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
-  $(function() {
-    var link = $('.m-menu-link');
-    var close = $('.close-menu');
-    var menu = $('.m-menu');
-    link.on('click', function(event) {
-      event.preventDefault();
-      menu.toggleClass('m-menu_active');
+    $(function() {
+      var link = $('.m-menu-link');
+      var close = $('.close-menu');
+      var menu = $('.m-menu');
+      link.on('click', function(event) {
+        event.preventDefault();
+        menu.toggleClass('m-menu_active');
+      });
+      close.on('click', function(event) {
+        event.preventDefault();
+        menu.toggleClass('m-menu_active');
+      });
     });
-    close.on('click', function(event) {
-      event.preventDefault();
-      menu.toggleClass('m-menu_active');
-    });
-  });
   </script>
 </body>
 
